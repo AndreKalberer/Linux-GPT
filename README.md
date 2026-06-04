@@ -1,5 +1,9 @@
 # Linux-GPT: A Transformer Trained on the Linux Kernel
 
+> ⚠️ **Archived experiment.** This was a hands-on learning project — building and
+> training a Transformer from scratch on Linux-kernel C source. It is no longer
+> actively maintained and is kept public for reference.
+
 **Project Overview**
 A decoder-only Transformer model built from scratch in PyTorch, trained on the Linux Kernel source code to generate syntactically correct C code. This project explores the mechanics of Large Language Models (LLMs), moving from character-level prediction to Byte-Pair Encoding (BPE) tokenization.
 
@@ -26,3 +30,9 @@ A decoder-only Transformer model built from scratch in PyTorch, trained on the L
 * **Method:** Used LoRA (Low-Rank Adaptation) via the Unsloth library on a Tesla T4 GPU (Google Colab).
 * **Results:** The model successfully generates valid Linux Kernel syntax (headers, `static struct file_operations`, `kmalloc`) compared to the base model.
 * **Files:** The trained adapters are saved in the `linux_kernel_adapter/` folder.
+
+---
+
+## License
+
+[MIT](LICENSE)
